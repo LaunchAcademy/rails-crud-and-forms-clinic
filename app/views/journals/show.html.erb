@@ -1,5 +1,5 @@
 <h2>Journal Details Page: <%= @journal.name %></h2>
-<h4>Year: <%= @journal.year %> </h5>
+<h4>Year: <%= @journal.year %> </h4>
 <h4>Author: <%= @journal.author %> </h4>
 
 <div class="callout panel align-center grid-x">
@@ -12,3 +12,15 @@
 </div>
 
 <h4>Entries:</h4>
+
+<%= link_to("Add New Entry", new_journal_entry_path(@journal.id)) %>
+<ul>
+  <% @entries.each do |entry| %>
+  <li>
+    <%= entry.title %>
+    <br>
+    <%= entry.body %>
+  </li>
+
+  <% end %>
+</ul>

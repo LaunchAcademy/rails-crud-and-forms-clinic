@@ -26,6 +26,11 @@ body {
   font-family: monospace;
 }
 
+.form {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
 .layout .page-title {
   text-align: center;
   font-size: 50px;
