@@ -1,0 +1,12 @@
+<h2> All Journals</h2>
+
+<div class="align-center grix-x journals-container">
+  <ul>
+    <% @journals.each do |journal| %>
+      <li>
+        <a href="/journals/<%= journal.id %>"> <%= journal.name %> </a>
+      </li>
+    <% end %>
+  </ul>
+
+</div>
