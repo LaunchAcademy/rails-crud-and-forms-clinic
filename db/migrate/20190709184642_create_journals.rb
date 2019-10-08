@@ -7,7 +7,7 @@ class CreateJournals < ActiveRecord::Migration[5.2]
       t.text :description
       t.string :theme
 
-      t.timestamps null: false
+      t.timestamps
     end
   end
 end

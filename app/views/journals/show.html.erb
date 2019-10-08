@@ -1,9 +1,14 @@
-<h2>Journal Details Page:</h2>
-<h4>Year:</h4>
-<h4>Author:</h4>
+<h2>Journal Details Page: <%= @journal.name %> </h2>
+<h4>Year: <%= @journal.year %></h4>
+<h4>Author: <%= @journal.author %> </h4>
 
 <div class="callout panel align-center grid-x journal-description">
-
+  <%= @journal.description %>
 </div>
 
 <h4>Entries:</h4>
+<ol>
+  <% @entries.each do |entry| %>
+    <li> <%= entry.title %> </li>
+  <% end %>
+</ol>

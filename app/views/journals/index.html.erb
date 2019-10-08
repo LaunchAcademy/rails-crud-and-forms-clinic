@@ -1,4 +1,9 @@
 <h2> All Journals</h2>
 
 <div class="align-center grix-x journals-container">
+  <ul>
+    <% @journals.each do |journal| %>
+      <li> <%= journal.name %> </li>
+    <% end %>
+  </ul>
 </div>
