@@ -12,3 +12,8 @@
 </div>
 
 <h4>Entries:</h4>
+<ol>
+  <% @entries.each do |entry| %>
+    <li> <%= entry.title %> </li>
+  <% end %>
+</ol>
