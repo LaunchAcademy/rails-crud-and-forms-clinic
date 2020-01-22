@@ -43,8 +43,8 @@ Create a rails app with the following entities. Satisfy the acceptance criteria 
 
 **Acceptance Criteria**
 * Visiting the `/journals/2` should show an index of ENTRIES for that journal
-* Visiting the `/entries/4` should all of the details for a given entry, including the journal it belongs to.
-* Visiting the `/entries/4/journals/new` should should display a form for creating a new entry in the journal with an id of 4
+* Visiting the `/entries/4` should show all of the details for a given entry, including the journal it belongs to.
+* Visiting the `/journals/2/entries/new` should should display a form for creating a new entry in the journal with an id of 2
 
 
 ### Non-Core
