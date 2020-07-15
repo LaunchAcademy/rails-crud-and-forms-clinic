@@ -4,9 +4,11 @@
   <ul>
     <% @journals.each do |journal| %>
       <li>
-        <a href="/journals/<%= journal.id %>"> <%= journal.name %> </a>
+        <%= link_to(journal.name, journal_path(journal)) %>
       </li>
     <% end %>
   </ul>
 
 </div>
+
+<%= link_to 'Add New Journal', new_journal_path %>

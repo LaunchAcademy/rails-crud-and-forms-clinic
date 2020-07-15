@@ -11,4 +11,14 @@
 <% end %>
 </div>
 
+<hr>
+<%= link_to 'Add New Journal Entry', new_journal_entry_path(@journal) %>
+
 <h4>Entries:</h4>
+
+
+<% @entries.each do |entry| %>
+  <p>
+    <%= link_to(entry.title, entry_path(entry)) %>
+  </p>
+<% end %>
