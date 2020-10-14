@@ -14,14 +14,14 @@
       </div>
     </div>
 
-<% flash.each do |key, value| %>
-  <%= value %>
-<% end %>
+  <% flash.each do |key, value| %>
+    <%= value %>
+  <% end %>
 
-<div class="main-body">
+  <div class="main-body">
 
-  <%= yield %>
-</div>
+    <%= yield %>
+  </div>
 
 </body>
 </html>

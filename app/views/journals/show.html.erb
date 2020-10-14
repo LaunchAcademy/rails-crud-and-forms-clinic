@@ -3,12 +3,11 @@
 <h4>Author: <%= @journal.author %> </h4>
 
 <div class="callout panel align-center grid-x">
-
-<% if !@journal.description.nil? %>
-  <p>
-    <%= @journal.description %>
-  </p>
-<% end %>
+  <% if !@journal.description.nil? %>
+    <p>
+      <%= @journal.description %>
+    </p>
+  <% end %>
 </div>
 
 <h4>Entries:</h4>
