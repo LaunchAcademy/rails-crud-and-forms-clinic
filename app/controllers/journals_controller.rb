@@ -8,14 +8,6 @@ class JournalsController < ApplicationController
     @journal = Journal.find(params[:id])
   end
 
-  def new
-    #
-  end
-
-  def create
-    # 
-  end
-
   private
 
 end
