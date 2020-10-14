@@ -10,4 +10,24 @@
   <% end %>
 </div>
 
+<h4>Add a New Entry</h4>
+
+<%= form_for([@journal, @entry]) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :body %>
+  <%= f.text_field :body %>
+
+  <%= f.submit "Add a New Entry" %>
+<% end%>
+
 <h4>Entries:</h4>
+
+<ul>
+  <% @entries.each do |entry| %>
+    <li>
+      <%= link_to entry.title, entry_path(entry) %>
+    </li>
+  <% end %>
+</ul>

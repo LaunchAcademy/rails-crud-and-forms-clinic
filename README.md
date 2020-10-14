@@ -30,9 +30,9 @@ Create a rails app with the following entities. Satisfy the acceptance criteria 
 
 **Acceptance Criteria**
 * Visiting the `/journals` path should contain a list of journals.
-* Visiting the `/journals/new` path should display a form for creating a new journal.
 * Visiting the `/journals/10` path should show the journal details for a journal with the ID of 10.
 * Visiting the root path should display a list of all journals.
+* Visiting the `/journals/new` path should display a form for creating a new journal.
 * When adding a new journal, if I fill out the form correctly, I should see the page for the newly created journal.
 * When adding a new journal, if I fill out the form incorrectly and submit the form, I should see the form and be displayed the validation errors.
 
