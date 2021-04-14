@@ -10,9 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2019_07_09_184649) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "entries", force: :cascade do |t|
+    t.string "title", null: false
+    t.text "body", null: false
+    t.bigint "journal_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["journal_id"], name: "index_entries_on_journal_id"
+  end
+
+  create_table "journals", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "year", null: false
+    t.string "author", null: false
+    t.text "description"
+    t.string "theme"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end

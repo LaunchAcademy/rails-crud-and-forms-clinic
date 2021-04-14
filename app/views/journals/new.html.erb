@@ -1,1 +1,21 @@
 <h2>New Journal Page</h2>
+
+<%= form_for(@journal) do |f|%>
+ <%= f.label :name %>
+ <%= f.text_field :name %>
+
+  <%= f.label :year %>
+ <%= f.text_field :year %>
+
+  <%= f.label :author %>
+ <%= f.text_field :author %>
+
+  <%= f.label :description %>
+ <%= f.text_field :description %>
+
+  <%= f.label :theme %>
+ <%= f.text_field :theme %>
+
+ <%= f.submit%>
+
+<% end %>

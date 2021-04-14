@@ -1,1 +1,10 @@
 <h2>New Entry Page</h2>
+<%= form_for [@journal, @entry] do |f|%>
+  <%= f.label :body %>
+ <%= f.text_field :body %>
+
+  <%= f.label :title %>
+ <%= f.text_field :title %>
+
+ <%= f.submit%>
+<% end %>
